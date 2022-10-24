@@ -4,53 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
+    <title>grid system</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./styles/styles.css"/>
     <script type="text/javascript" src="./scripts/script.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
-    <title>Document</title>
 </head>
 <body>
-    <div class="containerContact">
-            <div class="nav-navegation">
-                <div class="logo">
-                    ELIZABETH QUIÑONEZ 
-                </div>   
-                <ul>
-                    <li class="item-no-selected"><a href="index.html">Inicio</a></li>
-                    <li class="item-no-selected"><a href="estudios.html">Estudios</a></li>
-                    <li class="item-no-selected"><a href="jobs.html">Trabajos</a></li>
-                    <li class="item-selected"><a href="contact.html">Contacto</a></li>
-              </ul>
-      
+  <div class="my-container">
+    <div class="row">
+      <div class="col-12">
+        <!-- Inicio nav-bar -->
+          <div class="nav-navegation">
+            <div class="logo">
+                <h3>ELIZABETH QUIÑONEZ </h3>
+            </div>   
+            <ul>
+                <li class="item-no-selected"><a href="index.html">Inicio</a></li>
+                <li class="item-no-selected"><a href="studies.html">Estudios</a></li>
+                <li class="item-no-selected"><a href="jobs.html">Trabajos</a></li>
+                <li class="item-selected"><a href="contact.html">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+    <div class="content">
+        <div class="col">
+            <div class="text-center text-header">
+                <h3>Contacto</h3>
             </div>
-
-            
-        <div class="content">
-            <section>
-                <header id="article-header"><h3>Contacto</h3></header>
-                <hr>
-                <p>Para contactarme por favor llene los datos.</p>
-
-                <form id="form-contacto" action="">
-                    <label for="txt-nombre">Nombre:</label><br>
-                    <input type="text" id="txt-nombre"><br>
-                    <label for="txt-correo">Correo:</label><br>
-                    <input type="text" id="txt-correo"><br><br>
-                    <label for="txt-mensaje">Mensaje:</label><br>
-                    <textarea rows="7" type="text" id="txt-mensaje" value="Mensaje"></textarea>
-                    <input id="btn-input" type="submit" value="Enviar">
-                </form>
-
-            </section>
+            <hr>
+            <p style="padding-left: 5%;">Para contactarme por favor llene los datos.</p>
+            <form id="form-contacto" action="">
+                <label for="txt-nombre">Nombre:</label><br>
+                <input type="text" id="txt-nombre"><br>
+                <label for="txt-correo">Correo:</label><br>
+                <input type="text" id="txt-correo"><br><br>
+                <label for="txt-mensaje">Mensaje:</label><br>
+                <textarea rows="7" type="text" id="txt-mensaje" value="Mensaje"></textarea>
+                <input id="btn-input" type="submit" value="Enviar">
+            </form>
         </div>
-        <div class="footer">
-                <h4>Copyrigth 2022 - Universidad del Cauca</h4>
-                <h4>Popayan - Cauca</h4>
-    
-                <a class="btn-network" onclick="onFacebook()"><img src="assets/images/facebook.png" alt="Twitter" width="2%"></a>
-                <a class="btn-network" onclick="onTwiter()"><img src="assets/images/twitter.png" alt="Twitter" width="2%"></a>
-                <a class="btn-network" onclick="onInstagram()"><img src="assets/images/instagram.png" alt="Instagram" width="2%"></a>
-        </div>
+    </div>  
+    <div class="footer">
+      <h4>Copyrigth 2022 - Universidad del Cauca</h4>
+      <h4>Popayan - Cauca</h4>
+      <a class="btn-network" onclick="onFacebook()"><img src="assets/images/facebook.png" alt="Twitter" width="2%"></a>
+      <a class="btn-network" onclick="onTwiter()"><img src="assets/images/twitter.png" alt="Twitter" width="2%"></a>
+      <a class="btn-network" onclick="onInstagram()"><img src="assets/images/instagram.png" alt="Instagram" width="2%"></a>
     </div>
+  </div>
 </body>
 </html>
